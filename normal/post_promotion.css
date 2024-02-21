@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.spa-header, .spa-footer {
+    background-color: #716564;
+    color: #fff;
+    padding: 20px;
+}
+
+.brand-logo {
+    height: 60px;
+    width: auto;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.search-box {
+    display: inline-block;
+}
+
+.search-input {
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #5a4938;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.current-page {
+    font-style: italic;
+}
+
+.page-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 1.5em;
+    color: #716564;
+    margin-bottom: 20px;
+}
+
+.promotions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-img {
+    width: 30%;
+    height: auto;
+}
+
+.spa-footer {
+    text-align: center;
+    margin-top: 20px;
+}

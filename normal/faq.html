@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimandin Spa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../navbar.css">
+  <!--  -->
+
+  <!-- ลิ้งนี้ให้เปลี่ยนตามไฟล์ของ css ของหน้านั้นๆ -->
+  <link rel="stylesheet" href="./faq.css">
+
+</head>
+
+<body>
+    <nav class="site-header navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="logo navbar-brand" href="./home.html"><img src="../image/logo.png" alt="logo"></a>
+          <a class="navbar-brand text-white fw-bold" href="./home.html">Wimandin Spa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class=" navbar-wrapper collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link text-white " aria-current="page" href="./home.html">Home</a>
+              </li>
+              <li class="drop1 nav-item dropdown ps-4">
+                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Service
+                </a>
+                <ul class="drop-menu1 dropdown-menu">
+                  <li><a class="dropdown-item" href="./sevice_treatment.html">Treatment</a></li>
+                  <li><a class="dropdown-item" href="./sevice_room.html">Room</a></li>
+                </ul>
+              </li>
+    
+              <li class="drop1 nav-item dropdown ps-4">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Post
+                </a>
+                <ul class="drop-menu1 dropdown-menu">
+                  <li><a class="dropdown-item" href="./post_promotion.html">Promotion</a></li>
+                  <li><a class="dropdown-item" href="./post_news.html">News</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ps-4">
+                <a class="nav-link text-white" href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link text-white" href="./review.html">Review</a>
+              </li>
+            </ul>
+    
+            <div class="search-container">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="search-button">
+                  <img
+                    src="../image/search.svg"
+                    alt="Search" class="search-icon" />
+                </button>
+              </form>
+            </div>
+    
+            <div class="profile px-4"><a href="#"><img src="../image/person-circle.svg" alt="profile"></a></div>
+    
+          </div>
+    
+        </div>
+    
+      </nav>
+      <section class="container question-section">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="bc breadcrumb">
+            <li class="breadcrumb-item link"><a href="./home.html">Home</a></li>
+            <li class="breadcrumb-item"  aria-current="page">FAQ</li>
+          </ol>
+        </nav>
+        
+      <h1 class="page-title">FAQ</h1>
+      <h2 class="page-subtitle">คำถามที่พบบ่อย</h2>
+      
+        <article class="question-article">
+          <a href="#" class="question-link">จองทางไหนได้บ้าง</a>
+          <div class="answer-text">ตอบๆๆๆ</div>
+        </article>
+        <article class="question-article">
+          <a href="#" class="question-link">สามารถจองล่วงหน้าได้กี่วัน</a>
+          <div class="answer-text">คำตอบบบบบบบบบบบบบบบบบบบบบบ</div>
+        </article>
+        <article class="question-article">
+          <a href="#" class="question-link">ร้านนี้มีแมวมั้ย</a>
+          <div class="answer-text">มีจ้า</div>
+        </article>
+      </section>
+      
+      <div class="image-gallery">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f23a1fdae34f3913a252be6ae4bcb69632a3c32f2d67a5e69aca4b797b60625a?apiKey=37189c57caf0427ab2f296460ec4dc93&" class="gallery-img" alt="Image description 1">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/181c952cd56aadfa89efccdddad061a49ba18e43a9223acbea8b37152a5248a9?apiKey=37189c57caf0427ab2f296460ec4dc93&" class="gallery-img" alt="Image description 2">
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
