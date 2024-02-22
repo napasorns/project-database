@@ -86,27 +86,31 @@
 
   <!-- เนื้อหาในเว็บ -->
   <main>
-    <section class=" form-container">
-      <div class="heading mb-4">ลงชื่อเข้าใช้</div>
-        <form>
-            <label for="emailInput" class="required">Email</label>
-            <input type="email" id="emailInput" class="form-input" placeholder="your@email.com" aria-label="Enter your email">
+    <section class="form-container">
+      <div class="heading mb-3">ลงชื่อเข้าใช้</div>
+        <form class="col-12">
+            <label for="emailInput" class="required ">Email</label>
+            <input type="email" id="emailInput" class="form-input form-control" placeholder="your@email.com" aria-label="Enter your email">
             <label for="passwordInput" class="required">Password</label>
-            <input type="password" id="passwordInput" class="form-input" placeholder="password" aria-label="Enter your password">
-            <button type="submit" class="submit-btn mt-5">เข้าสู่ระบบ</button>
+            <input type="password" id="passwordInput" class="form-input form-control" placeholder="password" aria-label="Enter your password">
+            <button type="submit" class="submit-btn btn btn-dark mt-4">ลงทะเบียน</button>
         </form>
         <div class="register-link d-flex mt-4">
           <p class="pe-2">หากคุณยังไม่สมัครสมาชิก</p>
           <a href="./register.html">สมัครสมาชิก</a>
         </div>
-        <div class="social-btn">
-            <img src="../image/google.png" alt="Google Icon">
+
+        <button class="social-btn btn btn-light">
+          <img class="social-img me-2" src="../image/google.png" alt="Google Icon">
             <div>Login with Google</div>
-        </div>
-        <div class="social-btn">
-            <img src="../image/facebook.png" alt="Facebook Icon">
-            <div>Login with Facebook</div>
-        </div>
+        </button>
+            
+        
+        
+            <button class="social-btn btn btn-light">
+              <img class="social-img me-2" src="../image/facebook.png" alt="Facebook Icon">
+              Login with Facebook</button>
+        
     </section>
 </main>
 
