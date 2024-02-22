@@ -1,51 +1,9 @@
-body {
-    font-family: 'Arial', sans-serif;
-}
 
-.spa-header, .spa-footer {
-    background-color: #716564;
-    color: #fff;
-    padding: 20px;
-}
-
-.brand-logo {
-    height: 60px;
-    width: auto;
-}
-
-.main-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.nav-item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.search-box {
-    display: inline-block;
-}
-
-.search-input {
-    margin-right: 10px;
-}
-
-.search-button {
-    background-color: #5a4938;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
 
 .content {
     padding: 20px;
 }
 
-.breadcrumb {
-    margin-bottom: 20px;
-}
 
 .current-page {
     font-style: italic;
@@ -67,12 +25,21 @@ body {
     justify-content: space-between;
 }
 
-.promo-img {
-    width: 30%;
-    height: auto;
+
+/* crop image */
+.promo-con{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100% * (100 / 120));
+    box-shadow: 1px 1px 1px rgb(0, 0, 0,0.6);
+    margin: 2rem 0;
 }
 
-.spa-footer {
-    text-align: center;
-    margin-top: 20px;
+.promo-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

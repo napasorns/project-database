@@ -1,99 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wimandin Spa</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wimandin Spa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../navbar.css">
   <!--  -->
 
   <!-- ลิ้งนี้ให้เปลี่ยนตามไฟล์ของ css ของหน้านั้นๆ -->
-  <link rel="stylesheet" href="./sevice_room_detail.css">
+  <link rel="stylesheet" href="./sevice_room.css">
 </head>
+
 <body>
-    <nav class="site-header navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="logo navbar-brand" href="./home.html"><img src="../image/logo.png" alt="logo"></a>
-          <a class="navbar-brand text-white fw-bold" href="./home.html">Wimandin Spa</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class=" navbar-wrapper collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
-            <ul class="navbar-nav ">
-              <li class="nav-item ">
-                <a class="nav-link text-white " aria-current="page" href="./home.html">Home</a>
-              </li>
-              <li class="drop1 nav-item dropdown ps-4">
-                <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Service
-                </a>
-                <ul class="drop-menu1 dropdown-menu">
-                  <li><a class="dropdown-item" href="./sevice_treatment.html">Treatment</a></li>
-                  <li><a class="dropdown-item" href="./sevice_room.html">Room</a></li>
-                </ul>
-              </li>
-    
-              <li class="drop1 nav-item dropdown ps-4">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Post
-                </a>
-                <ul class="drop-menu1 dropdown-menu">
-                  <li><a class="dropdown-item" href="./post_promotion.html">Promotion</a></li>
-                  <li><a class="dropdown-item" href="./post_news.html">News</a></li>
-                </ul>
-              </li>
-              <li class="nav-item ps-4">
-                <a class="nav-link text-white" href="./faq.html">FAQ</a>
-              </li>
-              <li class="nav-item px-4">
-                <a class="nav-link text-white" href="./review.html">Review</a>
-              </li>
+  <nav class="site-header navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="logo navbar-brand" href="./home.html"><img src="../image/logo.png" alt="logo"></a>
+      <a class="navbar-brand text-white fw-bold" href="./home.html">Wimandin Spa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" navbar-wrapper collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link text-white " aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="drop1 nav-item dropdown ps-4">
+            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Service
+            </a>
+            <ul class="drop-menu1 dropdown-menu">
+              <li><a class="dropdown-item" href="./sevice_treatment.html">Treatment</a></li>
+              <li><a class="dropdown-item" href="./sevice_room.html">Room</a></li>
             </ul>
-    
-            <div class="search-container">
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="search-button">
-                  <img
-                    src="../image/search.svg"
-                    alt="Search" class="search-icon" />
-                </button>
-              </form>
-            </div>
-    
-            <div class="profile px-4"><a href="./login.html"><img src="../image/person-circle.svg" alt="profile"></a></div>
-    
-          </div>
-    
+          </li>
+
+          <li class="drop1 nav-item dropdown ps-4">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Post
+            </a>
+            <ul class="drop-menu1 dropdown-menu">
+              <li><a class="dropdown-item" href="./post_promotion.html">Promotion</a></li>
+              <li><a class="dropdown-item" href="./post_news.html">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ps-4">
+            <a class="nav-link text-white" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link text-white" href="./review.html">Review</a>
+          </li>
+        </ul>
+
+        <div class="search-container">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="search-button">
+              <img src="../image/search.svg" alt="Search" class="search-icon" />
+            </button>
+          </form>
         </div>
-    
-      </nav>
-      <!----gen fig done---->
 
-      <main>
-        <article class="room">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b208162af5c820809f9872337e198a91443c9be8ac366aa3f88c6b2c0e6b9200?apiKey=765867cd70bd47438cc6f11c19137da0&" alt="Family Size1 Room">
-          <div class="room-info">Family Size1 - 4 People</div>
-        </article>
-        <article class="room">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/74f77416f87a882549d408eeb36674afa970da7895447ed97c7c36e7737c3671?apiKey=765867cd70bd47438cc6f11c19137da0&" alt="Family Size2 Room">
-          <div class="room-info">Family Size2 - 4 People</div>
-        </article>
-        <article class="room">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a3818735ea6adbfdc9153ba2dc8baa6407718dcca027e590dff7dec0d602cd4?apiKey=765867cd70bd47438cc6f11c19137da0&" alt="Family Size3 Room">
-          <div class="room-info">Family Size3 - 4 People</div>
-        </article>
-      </main>
+        <div class="profile px-4"><a href="./login.html"><img src="../image/person-circle.svg" alt="profile"></a></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main class="container mb-5">
+    <!-- breadcrumb -->
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="bc breadcrumb">
+        <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+        <li class="breadcrumb-item active">Service</li>
+        <li class="breadcrumb-item active" aria-current="page">Room</li>
+      </ol>
+    </nav>
+
+    <div class="mb-5">
+      <h1>Room</h1>
+      <h2>ห้อง</h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="room-card col">
+        <div class="card h-100">
+          <img src="../image/r4.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Family size1</h5>
+            <p class="card-text">4 คน</p>
+          </div>
+        </div>
+      </div>
+      <div class="room-card col">
+        <div class="card h-100">
+          <img src="../image/r1.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Family size2</h5>
+            <p class="card-text">4 คน</p>
+          </div>
+        </div>
+      </div>
+      <div class="room-card col">
+        <div class="card h-100">
+          <img src="../image/r2.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Family size3</h5>
+            <p class="card-text">4 คน</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 </body>
+
 </html>
