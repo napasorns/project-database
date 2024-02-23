@@ -95,3 +95,11 @@
       width: 60%;
     }
   }
+
+  .promo-card:hover .promo-img {
+    transform: scale(1.1);
+}
+
+.promo-card:hover .promo-overlay {
+    opacity: 1;
+}
