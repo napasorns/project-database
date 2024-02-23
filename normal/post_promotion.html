@@ -7,6 +7,7 @@
   <title>Wimandin Spa</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../navbar.css">
   <!--  -->
 
@@ -94,40 +95,40 @@
       <div class="promo-card col">
         <div class="promo_con">
           <img src="../image/p1.jpg" class="promo-img card-img-top" alt="promotion1">
-          
+
         </div>
       </div>
       <div class="promo-card col">
         <div class="promo_con">
           <img src="../image/p2.jpg" class="promo-img card-img-top" alt="promotion2">
-          
+
         </div>
       </div>
       <div class="promo-card col">
         <div class="promo_con">
           <img src="../image/p3.jpg" class="promo-img card-img-top" alt="promotion3">
-          
+
         </div>
       </div>
 
       <div class="promo-card col">
         <div class="promo_con">
           <img src="../image/p4.jpg" class="promo-img card-img-top" alt="promotion4">
-          
+
         </div>
       </div>
 
       <div class="promo-card col">
         <div class="promo_con">
           <img src="../image/p5.jpg" class="promo-img card-img-top" alt="promotion5">
-          
+
         </div>
       </div>
 
       <div class="promo-card col">
         <div class="promo_con">
           <img src="../image/p6.jpg" class="promo-img card-img-top" alt="promotion6">
-          
+
         </div>
       </div>
 
@@ -136,8 +137,10 @@
   </main>
 
   <div class="popup-image">
+
     <span class="close">&times;</span>
     <img src="../image/p1.jpg" alt="">
+    
   </div>
 
 
@@ -146,16 +149,18 @@
     </script>
 
   <script>
-    document.querySelectorAll('.promo-card img').forEach(promo_con =>{
-      promo_con.onclick = () =>{
+
+    document.querySelectorAll('.promo-card img').forEach(promo_con => {
+      promo_con.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';
         document.querySelector('.popup-image img').src = promo_con.getAttribute('src');
       }
     });
-    
-    document.querySelector('.popup-image .close').onclick = () =>{
-        document.querySelector('.popup-image').style.display = 'none';
+
+    document.querySelector('.popup-image .close').onclick = () => {
+      document.querySelector('.popup-image').style.display = 'none';
     }
+
   </script>
 </body>
 
