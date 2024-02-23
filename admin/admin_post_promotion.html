@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wimandin Spa</title>
-
-  <!-- ต้องก็อป 2 ลิ้งนี้ใส่ทุกหน้า -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../navbar.css">
@@ -14,11 +12,9 @@
 
   <!-- ลิ้งนี้ให้เปลี่ยนตามไฟล์ของ css ของหน้านั้นๆ -->
   <link rel="stylesheet" href="./admin_post_promotion.css">
-
 </head>
 
 <body>
-
   <!-- แถบเมนูบาร์ข้างบนสุด -->
   <nav class="site-header navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -67,31 +63,115 @@
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="search-button">
-              <img
-                src="../image/search.svg"
-                alt="Search" class="search-icon" />
+              <img src="../image/search.svg" alt="Search" class="search-icon" />
             </button>
           </form>
         </div>
 
-        <div class="profile px-4"><a href="#"><img src="../image/person-circle.svg" alt="profile"></a></div>
+        <div class="profile px-4"><a href="./login.html"><img src="../image/person-circle.svg" alt="profile"></a></div>
 
       </div>
 
     </div>
 
   </nav>
-  <!-- จบแถบเมนู -->
+<!-- จบแถบเมนู -->
+<main class="content container">
 
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="bc breadcrumb">
+      <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+      <li class="breadcrumb-item active">Post</li>
+      <li class="breadcrumb-item active" aria-current="page">Promotion</li>
+    </ol>
+  </nav>
 
+  <div class="mb-5">
+    <h1>Promotion</h1>
+    <h2>โปรโมชัน</h2>
+  </div>
 
+  
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="promo-card col">
+      <div class="promo_con">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b3bcb90be30f4c76705a8ad09e7c9cdd792fd26c8b92b74936d8d95bbc13f502?apiKey=4184a9342c92434aaa5bab005027bfb8&" alt="Gallery Image 2" class="gallery-image" class="promo-img card-img-top" alt="addpromotion">
+        
 
-  <!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
+      </div>
+    </div>
+    <div class="promo-card col">
+      <div class="promo_con">
+        <img src="../image/p1.jpg" class="promo-img card-img-top" alt="promotion1">
+      </div>
+    </div>
+
+    <div class="promo-card col">
+      <div class="promo_con">
+        <img src="../image/p2.jpg" class="promo-img card-img-top" alt="promotion2">
+        
+      </div>
+    </div>
+
+    <div class="promo-card col">
+      <div class="promo_con">
+        <img src="../image/p3.jpg" class="promo-img card-img-top" alt="promotion3">
+        
+      </div>
+    </div>
+
+    <div class="promo-card col">
+      <div class="promo_con">
+        <img src="../image/p4.jpg" class="promo-img card-img-top" alt="promotion4">
+        
+      </div>
+    </div>
+
+    <div class="promo-card col">
+      <div class="promo_con">
+        <img src="../image/p5.jpg" class="promo-img card-img-top" alt="promotion5">
+        
+      </div>
+    </div>
+
+  </div>
+  
+<!-- จบสักอย่าง -->
+
+ <!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+ crossorigin="anonymous"></script>
+<!--  -->
+
+</body>
+
+</html>
+  </main>
+
+  <div class="popup-image">
+    <span class="close">&times;</span>
+    <img src="../image/p1.jpg" alt="">
+  </div>
+
+<!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
   <!--  -->
-
+  
+  <script>
+    document.querySelectorAll('.promo-card img').forEach(promo_con =>{
+      promo_con.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = promo_con.getAttribute('src');
+      }
+    });
+    
+    document.querySelector('.popup-image .close').onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
