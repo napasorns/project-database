@@ -1,2 +1,16 @@
-
-
+.box{
+    display: flex;
+    position: relative;
+}
+.home_r4_image img{
+    width: 25%;
+    position: absolute;
+    right: 20rem;
+    left: 2rem;
+    top: 4rem;
+}
+.vdo{
+    top: -5rem;
+    position: absolute;
+    right: 0rem;
+}
