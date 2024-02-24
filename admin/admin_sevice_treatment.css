@@ -75,3 +75,14 @@
 .promo-card:hover .promo-overlay {
     opacity: 1;
 } */
+
+/* .add-treatment, .treatment-details, .treatment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 60px;
+    border: 1px solid #000;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+} */
