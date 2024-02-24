@@ -76,7 +76,7 @@
 
   </nav>
 
-  
+
 
 
   <main class="container mb-5">
@@ -99,70 +99,69 @@
       <div class="room_card col">
         <div class="card h-100">
           <img src="../image/r4.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
+          <div class="room-text card-body text-center">
             <h5 class="card-title">Family size1</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
       </div>
+
       <div class="room_card col">
         <div class="card h-100">
           <img src="../image/r1.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
+          <div class="room-text card-body text-center">
             <h5 class="card-title">Family size2</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
       </div>
-      
+
       <div class="room_card col">
         <div class="card h-100">
           <img src="../image/r2.jpg" class="card-img-top" alt="...">
-          <div class="card-body text-center">
+          <div class="room-text card-body text-center">
             <h5 class="card-title">Family size3</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
       </div>
-      
+
     </div>
   </main>
 
-  <!-- <div class="popup-image">
-
+  <div class="popup-image">
     <span class="close">&times;</span>
-    <img src="../image/r4.jpg" alt="">
-    
-  </div> -->
-
-    <div class="popup-image">
-      <span class="close">&times;</span>
-      <img src="../image/r4.jpg" class="card-img-top" alt="...">
-      <div class="room-text card-body text-center">
-        <h5 class="card-title">Family size1</h5>
-        <p class="card-text">4 คน</p>
-      </div>
+    <img src="../image/r4.jpg" class="card-img-top" alt="...">
+    <div class="room-text card-body text-center">
+      <h5 class="card-title">Family size1</h5>
+      <p class="card-text">4 คน</p>
     </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-    <script>
+  <script>
 
-      document.querySelectorAll('.room_card img').forEach(card => {
-        card.onclick = () => {
-          document.querySelector('.popup-image').style.display = 'block';
-          document.querySelector('.popup-image img').src = card.getAttribute('src');
-          document.querySelector('.room-text').style.display = 'block';
-        }
-      });
-  
-      document.querySelector('.popup-image .close').onclick = () => {
-        document.querySelector('.popup-image').style.display = 'none';
+
+    document.querySelectorAll('.room_card img').forEach(card => {
+      card.onclick = () => {
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = card.getAttribute('src');
+        // document.querySelector('.popup-image .room-text') = room_card.getElementsByClassName('.room_card .room-text');
+        // const text1 = card.getElementsByClassName('.room_card .card-title');
+        // document.querySelector('.popup-image .card-title').innerHTML = text1;
+        // const text2 = card.getElementsByClassName('.room_card .card-text');
+        // document.querySelector('.popup-image .card-text').innerHTML = text2;
       }
-  
-    </script>
+    });
+
+    document.querySelector('.popup-image .close').onclick = () => {
+      document.querySelector('.popup-image').style.display = 'none';
+    }
+
+  </script>
 </body>
 
 </html>

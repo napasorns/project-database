@@ -156,19 +156,19 @@
     //         document.querySelector('.news-text').style.display = 'block';
     //       }
     //     });
-    document.querySelectorAll('.news-card img.news-img').forEach(card => {
-      card.onclick = () => {
+    document.querySelectorAll('.news-card .news_con').forEach(news_con => {
+      news_con.onclick = () => {
         document.querySelector('.popup-news').style.display = 'block';
         document.querySelector('.popup-news img.new-image').src = card.getAttribute('src');
         document.querySelector('.news-text').style.display = 'block';
       }
     });
 
-    document.querySelectorAll('.news-card .news-text').forEach(card => {
-      card.onclick = () => {
-        document.querySelector('.news-text').style.display = 'block';
-      }
-    });
+    // document.querySelectorAll('.news-card .news-text').forEach(card => {
+    //   card.onclick = () => {
+    //     document.querySelector('.news-text').style.display = 'block';
+    //   }
+    // });
 
     document.querySelector('.popup-news .close').onclick = () => {
       document.querySelector('.popup-news').style.display = 'none';
