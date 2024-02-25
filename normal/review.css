@@ -21,7 +21,7 @@
 }
 
 
-.review-content img{
+.review-content img.reviewer-avatar{
     width: 30px;
 }
 
@@ -32,4 +32,21 @@
     padding: .5rem 1rem;
 }
 
+.review-img-con{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    margin-left: 3rem;
+}
+
+.review-img{
+    width: 200px;
+    
+}
+
+.review-img img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
 
