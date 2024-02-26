@@ -147,22 +147,33 @@
   </div>
 
   <script>
+    //pop up เด้งขึ้นมาเมื่อกดดู detail
+    document.querySelectorAll('.room_card').forEach(roomCard => {
+  roomCard.addEventListener('click', () => {
+    const cardImage = roomCard.querySelector('img');
+    const cardTitle = roomCard.querySelector('.card-title').innerText;
+    const cardText = roomCard.querySelector('.card-text').innerText;
 
+    //เซ็ตเนื้อหาของ popup
+    const popupImage = document.querySelector('.popup-image img');
+    const popupTitle = document.querySelector('.popup-image .card-title-popup');
+    const popupText = document.querySelector('.popup-image .card-text-popup');
 
-    document.querySelectorAll('.room_card img').forEach(card => {
-      card.onclick = () => {
-        document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = card.getAttribute('src');
+    popupImage.src = cardImage.src;
+    popupTitle.innerText = cardTitle;
+    popupText.innerText = cardText;
 
-    // document.querySelector('.popup-image .card-title-popup').innerHTML = document.querySelectorAll('.card-title');
+    //แสดง popup
+    document.querySelector('.popup-image').style.display = 'block';
+  });
+});
 
-      }
-    });
+//กดปิด popup
+document.querySelector('.popup-image .close').addEventListener('click', () => {
+  
+  document.querySelector('.popup-image').style.display = 'none';
+});
 
-
-    document.querySelector('.popup-image .close').onclick = () => {
-      document.querySelector('.popup-image').style.display = 'none';
-    }
 
   </script>
   <!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
