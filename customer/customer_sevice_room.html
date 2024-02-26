@@ -96,77 +96,90 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="room_card col">
+      <div class="room_card col" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="card h-100">
           <img src="../image/r4.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
-            <h5 class="card-title">Family size1</h5>
+            <h5 class="card-title">Family size 1</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
       </div>
 
-      <div class="room_card col">
+      <div class="room_card col" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="card h-100">
           <img src="../image/r1.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
-            <h5 class="card-title">Family size2</h5>
+            <h5 class="card-title">Family size 2</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
       </div>
 
-      <div class="room_card col">
+      <div class="room_card col" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="card h-100">
           <img src="../image/r2.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
-            <h5 class="card-title">Family size3</h5>
+            <h5 class="card-title ">Family size 3</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
       </div>
-
     </div>
   </main>
 
-  <div class="popup-image">
-    <span class="close">&times;</span>
-    <img src="../image/r4.jpg" alt="...">
-    <div class="room-text card-body text-center">
-      <h5 class="card-title-popup">Family size1</h5>
-      <p class="card-text-popup">4 คน</p>
+
+  <!-- Modal bootstrap -->
+  <div class="popup-image modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span>
+    <div class="modal-dialog modal-dialog modal-dialog-centered">
+
+      <div class="modal-content">
+        <img src="../image/r4.jpg" alt="...">
+        <h5 class="card-title-popup text-center pt-3">Family size 1</h5>
+        <p class="card-text-popup text-center">4 คน</p>
+
+
+      </div>
     </div>
   </div>
 
+  <!-- pop up เด้งขึ้นมาเมื่อกดดู detail -->
   <script>
+    document.querySelectorAll('.room_card').forEach(roomCard => {
+      roomCard.addEventListener('click', () => {
+        const cardImage = roomCard.querySelector('img');
+        const cardTitle = roomCard.querySelector('.card-title').innerText;
+        const cardText = roomCard.querySelector('.card-text').innerText;
 
-    // var picture = document.getElementsByClassName('card-img-top');
-    // const room_title = document.getElementsByClassName('card-title');
-    // const room_text = document.getElementsByClassName('card-text');
-    document.querySelectorAll('.room_card img').forEach(card => {
-      card.onclick = () => {
+        //เซ็ตเนื้อหาของ popup
+        const popupImage = document.querySelector('.popup-image img');
+        const popupTitle = document.querySelector('.popup-image .card-title-popup');
+        const popupText = document.querySelector('.popup-image .card-text-popup');
+
+        popupImage.src = cardImage.src;
+        popupTitle.innerText = cardTitle;
+        popupText.innerText = cardText;
+
+        //แสดง popup
         document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = card.getAttribute('src');
-        // document.querySelector('.popup-image img').src = room_card.getAttribute('src');
-        // document.querySelector('.popup-image .room-text') = room_card.getElementsByClassName('.room_card .room-text');
-        // const text1 = card.getElementsByClassName('.room_card .card-title');
-        // document.querySelector('.popup-image .card-title').innerHTML = text1;
-        // const text2 = card.getElementsByClassName('.room_card .card-text');
-        // document.querySelector('.popup-image .card-text').innerHTML = text2;
-      }
+      });
     });
 
-    
+    //กดปิด popup
+    document.querySelector('.popup-image .close').addEventListener('click', () => {
 
-    document.querySelector('.popup-image .close').onclick = () => {
       document.querySelector('.popup-image').style.display = 'none';
-    }
-
+    });
   </script>
-  
+
+
+  <!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <!--  -->
 </body>
 
 </html>
