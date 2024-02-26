@@ -29,7 +29,7 @@
 
 /* pop up */
 
-.popup-image {
+/* .popup-image {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,25 +53,25 @@
 
 .popup-image .room-text {
   position: absolute;
-  top: 90%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  height: 12vh;
+  height: 80%;
   padding-top: 15px;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 0px 0px 10px 10px;
   background-color: #fff;
   box-shadow: 1px 1px 1px rgb(0, 0, 0,0.5);
-}
+} */
 
 /* The Close Button */
 .close {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #000;
+  color: #fff;
   font-size: 50px;
   font-weight: bold;
   transition: 0.3s;

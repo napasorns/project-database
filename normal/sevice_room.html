@@ -96,7 +96,7 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="room_card col">
+      <div class="room_card col" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="card h-100">
           <img src="../image/r4.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
@@ -106,7 +106,7 @@
         </div>
       </div>
 
-      <div class="room_card col">
+      <div class="room_card col" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="card h-100">
           <img src="../image/r1.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
@@ -116,7 +116,7 @@
         </div>
       </div>
 
-      <div class="room_card col">
+      <div class="room_card col" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <div class="card h-100">
           <img src="../image/r2.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
@@ -129,12 +129,31 @@
     </div>
   </main>
 
-  <div class="popup-image">
+  <!-- <div class="popup-image">
     <span class="close">&times;</span>
+    <div class="room-text card-body text-center"></div>
     <img src="../image/r4.jpg" alt="...">
-    <div class="room-text card-body text-center">
-      <h5 class="card-title-popup">Family size1</h5>
-      <p class="card-text-popup">4 คน</p>
+
+    <h5 class="card-title-popup">Family size1</h5>
+    <p class="card-text-popup">4 คน</p>
+  </div>
+  </div> -->
+
+  <!-- Button trigger modal -->
+
+  <!-- Modal bootstrap -->
+  <div class="popup-image modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span>
+    <div class="modal-dialog modal-dialog modal-dialog-centered">
+      
+      <div class="modal-content">
+          <img src="../image/r4.jpg" alt="...">
+          <h5 class="card-title-popup text-center">Family size1</h5>
+          <p class="card-text-popup text-center">4 คน</p>
+        
+
+      </div>
     </div>
   </div>
 
@@ -147,16 +166,11 @@
       card.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';
         document.querySelector('.popup-image img').src = card.getAttribute('src');
-        // document.querySelector('.popup-image img').src = room_card.getAttribute('src');
-        // document.querySelector('.popup-image .room-text') = room_card.getElementsByClassName('.room_card .room-text');
-        // const text1 = card.getElementsByClassName('.room_card .card-title');
-        // document.querySelector('.popup-image .card-title').innerHTML = text1;
-        // const text2 = card.getElementsByClassName('.room_card .card-text');
-        // document.querySelector('.popup-image .card-text').innerHTML = text2;
+
       }
     });
 
-    
+
 
     document.querySelector('.popup-image .close').onclick = () => {
       document.querySelector('.popup-image').style.display = 'none';
