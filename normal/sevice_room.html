@@ -100,7 +100,7 @@
         <div class="card h-100">
           <img src="../image/r4.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
-            <h5 class="card-title">Family size1</h5>
+            <h5 class="card-title">Family size 1</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
@@ -110,7 +110,7 @@
         <div class="card h-100">
           <img src="../image/r1.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
-            <h5 class="card-title">Family size2</h5>
+            <h5 class="card-title">Family size 2</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
@@ -120,7 +120,7 @@
         <div class="card h-100">
           <img src="../image/r2.jpg" class="card-img-top" alt="...">
           <div class="room-text card-body text-center">
-            <h5 class="card-title">Family size3</h5>
+            <h5 class="card-title ">Family size 3</h5>
             <p class="card-text">4 คน</p>
           </div>
         </div>
@@ -146,12 +146,12 @@
     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <span class="close" data-bs-dismiss="modal" aria-label="Close">&times;</span>
     <div class="modal-dialog modal-dialog modal-dialog-centered">
-      
+
       <div class="modal-content">
-          <img src="../image/r4.jpg" alt="...">
-          <h5 class="card-title-popup text-center">Family size1</h5>
-          <p class="card-text-popup text-center">4 คน</p>
-        
+        <img src="../image/r4.jpg" alt="...">
+        <h5 class="card-title-popup text-center">Family size 1</h5>
+        <p class="card-text-popup text-center">4 คน</p>
+
 
       </div>
     </div>
@@ -159,17 +159,16 @@
 
   <script>
 
-    // var picture = document.getElementsByClassName('card-img-top');
-    // const room_title = document.getElementsByClassName('card-title');
-    // const room_text = document.getElementsByClassName('card-text');
+
     document.querySelectorAll('.room_card img').forEach(card => {
       card.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';
         document.querySelector('.popup-image img').src = card.getAttribute('src');
 
+    // document.querySelector('.popup-image .card-title-popup').innerHTML = document.querySelectorAll('.card-title');
+
       }
     });
-
 
 
     document.querySelector('.popup-image .close').onclick = () => {
