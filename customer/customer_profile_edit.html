@@ -86,38 +86,46 @@
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="bc breadcrumb">
       <li class="breadcrumb-item"><a href="./customer_home.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Profile</li>
+      <li class="breadcrumb-item"><a href="./customer_profile.html">Profile</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Edit Profile</li>
     </ol>
   </nav>
 
   <!-- เนื้อหา -->
 
 <!-- <h1 class="text-center">แก้โปรไฟล์</h1><br><br></p> -->
-<main class="d-flex justify-content-center mt-5 ">
-    
-  <div class="box-1 border">
-      <div class="heading mt-4">สมัครสมาชิก</div>
-      <div class="sub-heading mb-3 fw-bold">ข้อมูลส่วนตัว</div>
-  
-  <form class="row g-3 pt-5">
-      <div class="col-md-6">
-          <label for="Inputfname" class="form-label required">ชื่อ</label>
-          <input id="Inputfname" type="text" class="form-control" placeholder="ชื่อ">
+
+<main>
+  <section class="profile-section">
+      <div class="profile-info">
+        <div class="review-content d-flex ps-4">
+        <img src="../image/Group 8748.png" alt="profile photo" class="profile-img">
+        </div>
+          <div class="bold-text vip">แก้ไขข้อมูลส่วนตัว</div>
+          <main class="d-flex justify-content-center mt-5 ">
+            
+            <form class="row g-3 pt-5">
+                <div class="col-md-6">
+                    <label for="Inputfname" class="form-label required">ชื่อ</label>
+                    <input id="Inputfname" type="text" class="form-control" placeholder="ชื่อ">
+                </div>
+                <div class="col-md-6">
+                    <label for="Inputlname" class="form-label required">นามสกุล</label>
+                    <input id="Inputlname" type="text" class="form-control" placeholder="นามสกุล">
+                </div>
+                <div class="col-md-12">
+                    <label for="Inputphone" class="form-label required">เบอร์โทรศัพท์</label>
+                    <input id="Inputphone" type="tel" class="form-control" placeholder="+66">
+                </div>
+            </form>
+            </div>
+            <a href="./customer_profile.html" class="action-btn">ยืนยัน</a>
+            <a href="./customer_profile.html" >ยกเลิก</a>
+            </div>
       </div>
-      <div class="col-md-6">
-          <label for="Inputlname" class="form-label required">นามสกุล</label>
-          <input id="Inputlname" type="text" class="form-control" placeholder="นามสกุล">
-      </div>
-      <div class="col-md-12">
-          <label for="Inputphone" class="form-label required">เบอร์โทรศัพท์</label>
-          <input id="Inputphone" type="tel" class="form-control" placeholder="+66">
-      </div>
-      <div class="col-md-6">
-          <label for="Inputdate" class="form-label required">วันเกิด </label>
-          <input id="Inputdate" type="date" class="form-control">
-      </div>
-  </form>
-  </div>
+  </section>
+</main>
+
 
   <!-- จบเนื้อหา -->
 

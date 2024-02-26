@@ -1,0 +1,234 @@
+.profile_detail{
+    border: 1px solid;
+}
+
+  /* .profile-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+} */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+.profile-action {
+    display: flex;
+    align-items: center;
+}
+/* .action-btn {
+    background-color: #716564;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+} */
+.profile-img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+.bold-text {
+    font-weight: 700;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #fff;
+}
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  background-color: #716564;
+  padding: 19px 42px;
+}
+.logo-img {
+  width: 73px;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.nav-item {
+  margin: 0 10px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border: 1px solid #000;
+  width: 100%;
+}
+.search-input {
+  border: none;
+  padding: 0 10px;
+  flex-grow: 1;
+}
+.profile-section {
+  /* display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #716564; /* สีพื้นหลัง */
+  color: white; /* สีตัวอักษร */
+  border-radius: 5px; /* ทำให้มีมุมโค้ง */
+  transition: background-color 0.3s ease; /* เพื่อทำให้เปลี่ยนสีพื้นหลังอย่างนุ่มนวล */
+  margin-top: 50px;
+}
+
+.action-btn:hover {
+  background-color: #564d4c; /* สีพื้นหลังเมื่อชี้ (hover) */
+}
+
+.profile-info{
+  align-items: center;
+}
+
+/* aaaaaaaaaaaaaaaaaaa*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ทำให้ main มีความสูงเท่ากับ viewport height */
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info {
+  text-align: left;
+  /* padding: 10px; */
+  width: 700px; /* ปรับขนาดรูปตามที่ต้องการ */
+  height: 600px; /* ปรับขนาดรูปตามที่ต้องการ */
+  border: 2px solid #716564; /* เพิ่มเส้นขอบ */
+  /* border-radius: 10px; ทำให้มีขอบมนเล็กน้อย */
+  line-height: 3; /* เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
+}
+
+/* .profile-action {
+  
+  line-height: 3; เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
+/* } */
+
+
+.profile-img {
+  width: 150px; /* ปรับขนาดความกว้างตามที่ต้องการ */
+  height: auto; /* รักษาสัดส่วนของรูป */
+  border-radius: 50%; /* ทำให้มีรูปร่างวงกลม */
+  margin-right: 0px; /* ระยะห่างระหว่างรูปและข้อความ */
+  margin-left: 250px;
+  margin-top: 15px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.profile-action {
+  text-align: center;
+  padding: 20px;
+}
+
+/* .action-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+} */
+
+.profile-action {
+  display: flex;
+  gap: 10px; /* ปรับระยะห่างตามความต้องการ */
+}
+
+.profile-action a {
+  padding: 5px 10px;
+  background-color: #716564; /* สีพื้นหลัง */
+  color: #716564; /* สีตัวอักษร */
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.bold-text{
+  margin-top: 0px;
+  /* font-size: 2.5ch; */
+}
+
+a {
+  color: #716564; /* เปลี่ยนสีตัวหนังสือเป็นสีแดง */
+  /* สามารถใส่ค่าสีแบบ RGB, Hex, หรือชื่อสีได้ตามต้องการ */
+}
+
+.vip {
+  font-size: 20px; /* ปรับขนาดตัวหนังสือให้ใหญ่ขึ้น */
+  /* สามารถปรับค่าได้ตามต้องการ */
+}
+
+.editja{
+  margin-left: 1px;
+  color: #000000; /* เปลี่ยนสีของลิงค์เป็นสีแดง (หรือสีที่คุณต้องการ) */
+  text-decoration: none; 
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.pen-img {
+  width: 35px; /* ปรับขนาดความกว้างตามที่ต้องการ */
+  height: 35px; /* รักษาสัดส่วนของรูป */
+  border-radius: 50%; /* ทำให้มีรูปร่างวงกลม */
+  margin-right: 0px;
+   /* ระยะห่างระหว่างรูปและข้อความ */
+  margin-left: 185px;
+  margin-top: 15px;
+}
+
+.profile-section {
+  position: relative;
+  overflow: hidden; /* เพื่อป้องกันเนื้อหาภายในไม่ให้ซ้อนทับกับพื้นหลัง */
+}
+
+.profile-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* สีน้ำตาล */
+  z-index: -1;
+}
+
+body {
+  background: linear-gradient(to bottom, #EDE7E6 50%, #ffffff 50%);
+  /* background-size: 2px 100%; ขนาดของเส้นขั้น (2px ความกว้าง x 100% ความสูง) */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+
+
+
