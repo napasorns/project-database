@@ -10,7 +10,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 <!-- ลิ้งนี้ให้เปลี่ยนตามไฟล์ของ css ของหน้านั้นๆ -->
-  <link rel="stylesheet" href="./customer_profile_edit.css">
+  <link rel="stylesheet" href="./customer_review_add.css">
   <link rel="stylesheet" href="../navbar.css">
 </head>
 <!--  -->
@@ -92,32 +92,21 @@
 
   <!-- เนื้อหา -->
 
-<!-- <h1 class="text-center">แก้โปรไฟล์</h1><br><br></p> -->
-<main class="d-flex justify-content-center mt-5 ">
-    
-  <div class="box-1 border">
-      <div class="heading mt-4">สมัครสมาชิก</div>
-      <div class="sub-heading mb-3 fw-bold">ข้อมูลส่วนตัว</div>
-  
-  <form class="row g-3 pt-5">
-      <div class="col-md-6">
-          <label for="Inputfname" class="form-label required">ชื่อ</label>
-          <input id="Inputfname" type="text" class="form-control" placeholder="ชื่อ">
-      </div>
-      <div class="col-md-6">
-          <label for="Inputlname" class="form-label required">นามสกุล</label>
-          <input id="Inputlname" type="text" class="form-control" placeholder="นามสกุล">
-      </div>
-      <div class="col-md-12">
-          <label for="Inputphone" class="form-label required">เบอร์โทรศัพท์</label>
-          <input id="Inputphone" type="tel" class="form-control" placeholder="+66">
-      </div>
-      <div class="col-md-6">
-          <label for="Inputdate" class="form-label required">วันเกิด </label>
-          <input id="Inputdate" type="date" class="form-control">
-      </div>
-  </form>
-  </div>
+<!-- <h1 class="text-center">เขียนรีวิว</h1><br><br></p> -->
+<main>
+        <article class="review-section">
+          <img src="../image/person-circle.svg" alt="Reviewer Avatar" class="reviewer-avatar">
+          <p class="fw-bold mt-3 ps-2">สมใจ ใจดี</p>
+
+            <h2>Review for Wimandin Spa</h2>
+            <div class="review-comment">คุณจะแนะนำอะไรเกี่ยวกับ วิมานดิน สปา...</div>
+            <div class="action-buttons">
+                <a href="./customer_review.html" class="action-btn">ยกเลิก</a>
+                <button class="button">บันทึก</button>
+            </div>
+        </article>
+    </section>
+</main>
 
   <!-- จบเนื้อหา -->
 

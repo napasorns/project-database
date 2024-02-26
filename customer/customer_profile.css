@@ -1,100 +1,6 @@
 .profile_detail{
     border: 1px solid;
 }
-/* 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .header-container {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    background-color: #716564;
-    width: 100%;
-    padding: 19px 42px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo-text img {
-    height: 50px;
-  }
-  .navigation-item a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: 400;
-  }
-  .search-container {
-    display: flex;
-    align-items: center;
-    border: 1px solid #000;
-    background-color: #fff;
-    padding: 7px;
-  }
-  .search-container img {
-    height: 24px;
-    cursor: pointer;
-  }
-  .search-input {
-    border: none;
-    outline: none;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  .profile-section {
-    background-color: #fff;
-    margin-top: 20px;
-    border: 1px solid #000;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .profile-information img {
-    border-radius: 50%;
-    height: 100px;
-    margin-bottom: 20px;
-  }
-  .edit-button {
-    background-color: #ede7e6;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  .logout-change-section {
-    margin-top: 20px;
-  }
-  .logout-button,
-  .change-password-link {
-    background-color: transparent;
-    border: none;
-    color: #716564;
-    cursor: pointer;
-    text-decoration: underline;
-    margin-right: 15px;
-  }
-  .change-password-link {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  @media (max-width: 991px) {
-    .header-container {
-      flex-direction: column;
-      padding: 20px;
-    }
-    .navigation-item a {
-      margin-bottom: 10px;
-    }
-    .profile-section {
-      padding: 20px;
-    }
-  } */
 
   .profile-section {
     display: flex;
@@ -122,6 +28,7 @@ body {
     width: 300px;
     height: auto;
     margin-bottom: 20px;
+    
 }
 .bold-text {
     font-weight: 700;
@@ -163,22 +70,101 @@ header {
   flex-grow: 1;
 }
 .profile-section {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   padding: 20px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
 }
 
 .action-btn {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #4CAF50; /* สีพื้นหลัง */
+  background-color: #716564; /* สีพื้นหลัง */
   color: white; /* สีตัวอักษร */
   border-radius: 5px; /* ทำให้มีมุมโค้ง */
   transition: background-color 0.3s ease; /* เพื่อทำให้เปลี่ยนสีพื้นหลังอย่างนุ่มนวล */
 }
 
 .action-btn:hover {
-  background-color: #45a049; /* สีพื้นหลังเมื่อชี้ (hover) */
+  background-color: #564d4c; /* สีพื้นหลังเมื่อชี้ (hover) */
+}
+
+.profile-info{
+  align-items: center;
+}
+
+/* aaaaaaaaaaaaaaaaaaa*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ทำให้ main มีความสูงเท่ากับ viewport height */
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info {
+  text-align: left;
+  /* padding: 10px; */
+  width: 700px; /* ปรับขนาดรูปตามที่ต้องการ */
+  height: 600px; /* ปรับขนาดรูปตามที่ต้องการ */
+  border: 2px solid #716564; /* เพิ่มเส้นขอบ */
+  /* border-radius: 10px; ทำให้มีขอบมนเล็กน้อย */
+  line-height: 3; /* เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
+}
+
+/* .profile-action {
+  
+  line-height: 3; เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
+/* } */
+
+
+.profile-img {
+  width: 100px; /* ปรับขนาดรูปตามที่ต้องการ */
+  height: 100px; /* ปรับขนาดรูปตามที่ต้องการ */
+  border-radius: 50%; /* ทำให้มีรูปร่างวงกลม */
+  margin-right: 20px; /* ระยะห่างระหว่างรูปและข้อความ */
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.profile-action {
+  text-align: center;
+  padding: 20px;
+}
+
+/* .action-btn {
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+} */
+
+.profile-action {
+  display: flex;
+  gap: 10px; /* ปรับระยะห่างตามความต้องการ */
+}
+
+.profile-action a {
+  padding: 5px 10px;
+  background-color: #716564; /* สีพื้นหลัง */
+  color: #716564; /* สีตัวอักษร */
+  border-radius: 5px;
+  text-decoration: none;
 }

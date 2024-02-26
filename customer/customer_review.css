@@ -5,7 +5,7 @@
     
 }
 
-.review-login{
+.review-add{
     padding: 2rem;
     
 }
@@ -25,7 +25,7 @@
     width: 30px;
 }
 
-.review-login button{
+.review-add button{
     background-color: #716564;
     color: #fff;
     border: none;
