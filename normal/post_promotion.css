@@ -63,27 +63,6 @@
     cursor: pointer;
   }
 
-  /* .arrow-btn{
-    position: absolute;
-    top: 50%;
-    font-size: 60px;
-    transform: translateY(-50%);
-    background: none;
-    cursor: pointer;
-  }
-
-  .left-arrow{
-    left: 10px;
-  }
-  .right-arrow{
-    right: 10px;
-  }
-
-  .arrow-btn:hover{
-    color: rgb(0, 0, 0,0.4);
-  } */
-  
-
   @media screen and (max-width: 768px){
     .popup-image img{
       width: 90%;
