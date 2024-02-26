@@ -86,14 +86,15 @@
 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="bc breadcrumb">
       <li class="breadcrumb-item"><a href="./customer_home.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Profile</li>
+      <li class="breadcrumb-item"><a href="./customer_review.html">Review</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Add Review</li>
     </ol>
   </nav>
 
   <!-- เนื้อหา -->
 
 <!-- <h1 class="text-center">เขียนรีวิว</h1><br><br></p> -->
-<main>
+<!-- <main>
         <article class="review-section">
           <img src="../image/person-circle.svg" alt="Reviewer Avatar" class="reviewer-avatar">
           <p class="fw-bold mt-3 ps-2">สมใจ ใจดี</p>
@@ -106,9 +107,39 @@
             </div>
         </article>
     </section>
+</main> -->
+
+<main>
+    <section class="review-section">
+        <div class="review-content d-flex ps-4">
+        <img src="../image/person-circle.svg" alt="Reviewer Avatar" class="reviewer-avatar">
+        <p class="fw-bold mt-3 ps-2">สมใจ ใจดี</p>
+    </div> 
+        <!-- <h2>Review for Wimandin Spa</h2> -->
+        <div class="review-comment">
+            <textarea placeholder="คุณจะแนะนำอะไรเกี่ยวกับ วิมานดิน สปา..." rows="4" cols="50"></textarea>
+        </div>
+        <div class="action-buttons">
+            <!-- <a href="#" class="action-btn" id="add-image-link">เพิ่มรูปภาพ</a> -->
+            <form action="/action_page.php">
+                <label for="img" class="upload-link">
+                    เพิ่มรูปภาพ
+                    <input type="file" id="img" name="img" accept="image/*">
+                </label>
+            </form>
+            <div class="review-content d-flex ps-4">
+                <a href="./customer_review.html" class="action-btn cancel-btn">ยกเลิก</a>
+            <button class="button">บันทึก</button>
+            </div>
+        </div>
+    </section>
 </main>
 
+
+
+
   <!-- จบเนื้อหา -->
+
 
 </div>
 
