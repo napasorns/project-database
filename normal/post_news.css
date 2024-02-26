@@ -28,7 +28,7 @@
     display: none;
   }
   
-  .popup-news .news-card {
+  .popup-news .news-card-popup {
     position: absolute;
     top: 45%;
     left: 50%;

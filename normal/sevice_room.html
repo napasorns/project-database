@@ -125,7 +125,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </main>
 
@@ -146,36 +145,36 @@
     </div>
   </div>
 
+  <!-- pop up เด้งขึ้นมาเมื่อกดดู detail -->
   <script>
-    //pop up เด้งขึ้นมาเมื่อกดดู detail
     document.querySelectorAll('.room_card').forEach(roomCard => {
-  roomCard.addEventListener('click', () => {
-    const cardImage = roomCard.querySelector('img');
-    const cardTitle = roomCard.querySelector('.card-title').innerText;
-    const cardText = roomCard.querySelector('.card-text').innerText;
+      roomCard.addEventListener('click', () => {
+        const cardImage = roomCard.querySelector('img');
+        const cardTitle = roomCard.querySelector('.card-title').innerText;
+        const cardText = roomCard.querySelector('.card-text').innerText;
 
-    //เซ็ตเนื้อหาของ popup
-    const popupImage = document.querySelector('.popup-image img');
-    const popupTitle = document.querySelector('.popup-image .card-title-popup');
-    const popupText = document.querySelector('.popup-image .card-text-popup');
+        //เซ็ตเนื้อหาของ popup
+        const popupImage = document.querySelector('.popup-image img');
+        const popupTitle = document.querySelector('.popup-image .card-title-popup');
+        const popupText = document.querySelector('.popup-image .card-text-popup');
 
-    popupImage.src = cardImage.src;
-    popupTitle.innerText = cardTitle;
-    popupText.innerText = cardText;
+        popupImage.src = cardImage.src;
+        popupTitle.innerText = cardTitle;
+        popupText.innerText = cardText;
 
-    //แสดง popup
-    document.querySelector('.popup-image').style.display = 'block';
-  });
-});
+        //แสดง popup
+        document.querySelector('.popup-image').style.display = 'block';
+      });
+    });
 
-//กดปิด popup
-document.querySelector('.popup-image .close').addEventListener('click', () => {
-  
-  document.querySelector('.popup-image').style.display = 'none';
-});
+    //กดปิด popup
+    document.querySelector('.popup-image .close').addEventListener('click', () => {
 
-
+      document.querySelector('.popup-image').style.display = 'none';
+    });
   </script>
+
+
   <!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
