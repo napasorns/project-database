@@ -1,0 +1,184 @@
+.profile_detail{
+    border: 1px solid;
+}
+/* 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header-container {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    background-color: #716564;
+    width: 100%;
+    padding: 19px 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-text img {
+    height: 50px;
+  }
+  .navigation-item a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 400;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 7px;
+  }
+  .search-container img {
+    height: 24px;
+    cursor: pointer;
+  }
+  .search-input {
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .profile-section {
+    background-color: #fff;
+    margin-top: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .profile-information img {
+    border-radius: 50%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .edit-button {
+    background-color: #ede7e6;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .logout-change-section {
+    margin-top: 20px;
+  }
+  .logout-button,
+  .change-password-link {
+    background-color: transparent;
+    border: none;
+    color: #716564;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-right: 15px;
+  }
+  .change-password-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  @media (max-width: 991px) {
+    .header-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .navigation-item a {
+      margin-bottom: 10px;
+    }
+    .profile-section {
+      padding: 20px;
+    }
+  } */
+
+  .profile-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+.profile-action {
+    display: flex;
+    align-items: center;
+}
+/* .action-btn {
+    background-color: #716564;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+} */
+.profile-img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.bold-text {
+    font-weight: 700;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #fff;
+}
+header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  background-color: #716564;
+  padding: 19px 42px;
+}
+.logo-img {
+  width: 73px;
+  height: auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.nav-item {
+  margin: 0 10px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  border: 1px solid #000;
+  width: 100%;
+}
+.search-input {
+  border: none;
+  padding: 0 10px;
+  flex-grow: 1;
+}
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.action-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4CAF50; /* สีพื้นหลัง */
+  color: white; /* สีตัวอักษร */
+  border-radius: 5px; /* ทำให้มีมุมโค้ง */
+  transition: background-color 0.3s ease; /* เพื่อทำให้เปลี่ยนสีพื้นหลังอย่างนุ่มนวล */
+}
+
+.action-btn:hover {
+  background-color: #45a049; /* สีพื้นหลังเมื่อชี้ (hover) */
+}
