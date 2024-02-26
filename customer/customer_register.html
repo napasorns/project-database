@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wimandin Spa</title>
+
+    <!-- ต้องก็อป 2 ลิ้งนี้ใส่ทุกหน้า -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../navbar.css">
+    <!--  -->
+
+    <!-- ลิ้งนี้ให้เปลี่ยนตามไฟล์ของ css ของหน้านั้นๆ -->
+    <link rel="stylesheet" href="./register.css">
+
+</head>
+
+<body>
+
+    <!-- แถบเมนูบาร์ข้างบนสุด -->
+    <nav class="site-header navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="logo navbar-brand" href="./home.html"><img src="../image/logo.png" alt="logo"></a>
+            <a class="navbar-brand text-white fw-bold" href="./home.html">Wimandin Spa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" navbar-wrapper collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="drop1 nav-item dropdown ps-4">
+                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Service
+                        </a>
+                        <ul class="drop-menu1 dropdown-menu">
+                            <li><a class="dropdown-item" href="./sevice_treatment.html">Treatment</a></li>
+                            <li><a class="dropdown-item" href="./sevice_room.html">Room</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="drop1 nav-item dropdown ps-4">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Post
+                        </a>
+                        <ul class="drop-menu1 dropdown-menu">
+                            <li><a class="dropdown-item" href="./post_promotion.html">Promotion</a></li>
+                            <li><a class="dropdown-item" href="./post_news.html">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ps-4">
+                        <a class="nav-link text-white" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link text-white" href="./review.html">Review</a>
+                    </li>
+                </ul>
+
+                <div class="search-container">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-button">
+                            <img src="../image/search.svg" alt="Search" class="search-icon" />
+                        </button>
+                    </form>
+                </div>
+
+                <div class="profile px-4"><a href="./login.html"><img src="../image/person-circle.svg"
+                            alt="profile"></a></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex justify-content-center mt-5 ">
+    
+        <div class="box-1 border">
+            <div class="heading mt-4">สมัครสมาชิก</div>
+            <div class="sub-heading mb-3 fw-bold">ข้อมูลส่วนตัว</div>
+        
+        <form class="row g-3 pt-5">
+            <div class="col-md-6">
+                <label for="Inputfname" class="form-label required">ชื่อ</label>
+                <input id="Inputfname" type="text" class="form-control" placeholder="ชื่อ">
+            </div>
+            <div class="col-md-6">
+                <label for="Inputlname" class="form-label required">นามสกุล</label>
+                <input id="Inputlname" type="text" class="form-control" placeholder="นามสกุล">
+            </div>
+            <div class="col-md-12">
+                <label for="Inputphone" class="form-label required">เบอร์โทรศัพท์</label>
+                <input id="Inputphone" type="tel" class="form-control" placeholder="+66">
+            </div>
+            <div class="col-md-6">
+                <label for="Inputdate" class="form-label required">วันเกิด </label>
+                <input id="Inputdate" type="date" class="form-control">
+            </div>
+        </form>
+        </div>
+    
+        <div class="box-2 ">
+            <div class="heading mb-5 "></div>
+            <div class="sub-heading fw-bold pb-5">บัญชี</div>
+            <div class="row justify-content-center">
+                <div class="mb-3 col-12">
+                    <label for="inputEmail4" class="form-label required">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="your@gmail.com">
+                </div>
+                <div class="mb-3 col-12">
+                    <label for="inputPassword4" class="form-label required">รหัสผ่าน </label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="รหัสผ่าน">
+                    <span>จะต้องมีความยาว 8 ตัวอักษรขึ้นไป</span>
+                </div>
+    
+                <div class="mb-3 col-12">
+                    <label for="inputPassword4" class="form-label required">ยืนยันรหัสผ่าน </label>
+                    <input type="password" class="form-control" placeholder="ยืนยันรหัสผ่าน">
+                </div>
+            
+                <div class="mb-4 mt-4 d-grid gap-2">
+                    <button type="submit" class="signin btn btn-dark">ลงทะเบียน</button>
+                </div>
+    
+                <div class="login-link text-center d-flex mt-2 justify-content-center mb-3">
+                    <p>สมัครสมาชิกแล้ว?&nbsp;&nbsp;</p>
+                    <a href="./login.html">เข้าสู่ระบบ</a>
+                </div>
+            </div>
+        </div>
+        </main>
+
+    <!-- ต้องก็อปลิ้งนี้ใส่ทุกหน้าด้วย -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--  -->
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wimandin Spa</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../navbar.css">
+  <!--  -->
+
+  <!-- ลิ้งนี้ให้เปลี่ยนตามไฟล์ของ css ของหน้านั้นๆ -->
+  <link rel="stylesheet" href="./review.css">
+</head>
+
+<body>
+  
+  <nav class="site-header navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="logo navbar-brand" href="./home.html"><img src="../image/logo.png" alt="logo"></a>
+      <a class="navbar-brand text-white fw-bold" href="./home.html">Wimandin Spa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" navbar-wrapper collapse navbar-collapse justify-content-lg-end" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link text-white " aria-current="page" href="./home.html">Home</a>
+          </li>
+          <li class="drop1 nav-item dropdown ps-4">
+            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Service
+            </a>
+            <ul class="drop-menu1 dropdown-menu">
+              <li><a class="dropdown-item" href="./sevice_treatment.html">Treatment</a></li>
+              <li><a class="dropdown-item" href="./sevice_room.html">Room</a></li>
+            </ul>
+          </li>
+
+          <li class="drop1 nav-item dropdown ps-4">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Post
+            </a>
+            <ul class="drop-menu1 dropdown-menu">
+              <li><a class="dropdown-item" href="./post_promotion.html">Promotion</a></li>
+              <li><a class="dropdown-item" href="./post_news.html">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ps-4">
+            <a class="nav-link text-white" href="./faq.html">FAQ</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link text-white" href="./review.html">Review</a>
+          </li>
+        </ul>
+
+        <div class="search-container">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="search-button">
+              <img src="../image/search.svg" alt="Search" class="search-icon" />
+            </button>
+          </form>
+        </div>
+
+        <div class="profile px-4"><a href="./login.html"><img class="profile" src="../image/person-circle.svg" alt="profile"></a></div>
+
+      </div>
+
+    </div>
+
+  </nav>
+  
+
+  <main class="content container">
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="bc breadcrumb">
+        <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Review</li>
+      </ol>
+    </nav>
+
+    <div class="mb-5">
+      <h1>Review</h1>
+      <h2>รีวิว</h2>
+    </div>
+
+    <section class="review-section">
+
+      <article class="review">
+        <div class="review-login">
+          <h4 class="text-center">เข้าสู่ระบบเพื่อเขียนรีวิว</h4>
+         
+          <a  class="d-block text-center" href="./login.html">
+            <button class="submit-btn btn btn-dark mt-4">ลงชื่อเข้าใช้</button>
+          </a>
+        </div>
+
+      </article>
+
+      <article class="review">
+        <div class="review-content d-flex ps-4">
+          <img src="../image/person-circle.svg" alt="Reviewer Avatar" class="reviewer-avatar">
+
+          <p class="fw-bold mt-3 ps-2">ธนธรณ์ จูหลาย</p>
+
+        </div>
+        <span class="post-date">06/01/2024</span>
+        <p class="mt-3">ดีงามจนหายปวดหลัง แมวส้มแค่มาเจอก็หายเมื่อย ขับรถกลับบ้านได้เลย</p>
+
+        
+
+      </article>
+
+      <article class="review">
+        <div class="review-content d-flex ps-4">
+          <img src="../image/person-circle.svg" alt="Reviewer Avatar" class="reviewer-avatar">
+
+          <p class="fw-bold mt-3 ps-2">ศุภสัณฑ์ มะนิสสา</p>
+
+        </div>
+        <span class="post-date">12/09/2023</span>
+        <p class="mt-3">บรรยากาศร้านดีมากค่ะ พี่พนักงานและคุณหมอนวดน่ารัก บริการดีมากๆค่ะ</p>
+
+        <div class="review-img-con">
+          <div class="review-img">
+            <img src="../image/rw1.jpg" alt="">
+          </div>
+          <div class="review-img">
+            <img src="../image/rw2.jpg" alt="">
+          </div>
+        </div>
+
+      </article>
+
+      <article class="review">
+        <div class="review-content d-flex ps-4">
+          <img src="../image/person-circle.svg" alt="Reviewer Avatar" class="reviewer-avatar">
+
+          <p class="fw-bold mt-3 ps-2">วิชชากร บุญประคม</p>
+
+
+        </div>
+        <span class="post-date">12/02/2023</span>
+        <p class="mt-3">ชอบบรรยากาศ ดูเป็นธรรมชาติร่มรื่นดีมาก พนักงานยิ้มแย้มต้อนรับดีมาก พนักงานนวดสุภาพ นวดดีมาก เบาสบายตัวเลยค่ะ ชอบค่ะ</p>
+      </article>
+
+    </section>
+
+    
+
+    <nav aria-label="Page navigation example ">
+      <ul class="pagination d-flex justify-content-center mt-5">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
