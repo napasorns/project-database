@@ -87,41 +87,44 @@
     </nav>
 
     <div class="row row-cols row-cols-md-2 g-4">
-      <div class="news-card col">
+      <section class="news-card col">
         <div class="news_con card">
           <div class="news-text card-body pb-5">
             <div class="profile d-flex align-items-center">
-              <img src="../image/logo.png" alt="">
-              <p class="fw-bold ps-2 pt-3">Wimandin Spa Admin</p>
-              <p class="card-text ps-4"><small class="text-body-secondary">2 วันที่ผ่านมา</small></p>
+              <img class="post-profile" src="../image/logo.png" alt="">
+              <p class="post-name fw-bold ps-2 pt-3">Wimandin Spa Admin</p>
+              <p class="post-date card-text ps-4 text-body-secondary">2 วันที่ผ่านมา</p>
             </div>
 
-            <h5 class="card-title fw-bold pt-3">แจ้งเรื่องคิวประจำวันที่ 10/02/2024</h5>
-            <p class="card-text">สำหรับวันนี้​ คิวเต็มทุกรอบแล้วนะคะ​
+            <h5 class="post-title card-title fw-bold pt-3">แจ้งเรื่องคิวประจำวันที่ 10/02/2024</h5>
+            <p class="post-content card-content">สำหรับวันนี้​ คิวเต็มทุกรอบแล้วนะคะ​
               คุณลูกค้าสามารถติดต่อสอบถามสำรองคิวของวันถัดไปได้เลยยย~ค่ะ</p>
           </div>
           <img src="../image/n1.jpg" class="news-img" alt="...">
         </div>
-      </div>
+      </section>
 
       <div class="news-card col">
-        <div class="news_con card">
+        <section class="news_con card">
           <div class="news-text card-body pb-5">
             <div class="profile d-flex align-items-center">
-              <img src="../image/logo.png" alt="">
-              <p class="fw-bold ps-2 pt-3">Wimandin Spa Admin</p>
-              <p class="card-text ps-4"><small class="text-body-secondary">10 วันที่ผ่านมา</small></p>
+              <img class="post-profile" src="../image/logo.png" alt="">
+              <p class="post-name fw-bold ps-2 pt-3">Wimandin Spa Admin</p>
+              <p class="post-date card-text ps-4 text-body-secondary">10 วันที่ผ่านมา</p>
             </div>
 
-            <h5 class="card-title fw-bold pt-3">ประกาศหยุดเพิ่มเติม</h5>
-            <p class="card-text">วิมานดินปิด​เพิ่ม 1 วัน วันที่10 นี้นะคะพวกเราชาววิมานดินขออนุญาตหยุดเพิ่มหลังจาก
+            <h5 class="post-title card-title fw-bold pt-3">ประกาศหยุดเพิ่มเติม</h5>
+            <p class="post-content card-content">วิมานดินปิด​เพิ่ม 1 วัน วันที่10
+              นี้นะคะพวกเราชาววิมานดินขออนุญาตหยุดเพิ่มหลังจาก
               เข้ารับวัคซีนกระตุ้นเข็ม​ 3 จ้า</p>
           </div>
           <img src="../image/n2.jpg" class="news-img" alt="...">
-        </div>
+        </section>
       </div>
 
     </div>
+
+
   </main>
 
   <!-- หน้าต่าง pop up -->
@@ -141,39 +144,28 @@
           คุณลูกค้าสามารถติดต่อสอบถามสำรองคิวของวันถัดไปได้เลยยย~ค่ะ</p>
       </div>
 
-      <img src="..." class="news-image-popup" alt="...">
+      <img src="../image/n2.jpg" class="news-image-popup" alt="...">
     </div>
   </div>
-
   <script>
-    //document.querySelectorAll('.news-card .news-con .news-img').forEach(card => {
-    // card.onclick = () => {
-    //         document.querySelector('.popup-news').style.display = 'block';
-    //         document.querySelector('.popup-news .news-card .new-image').src = card.getAttribute('src');
-    //         document.querySelector('.news-text').style.display = 'block';
-    //       }
-    //     });
+    // const news_img = document.querySelectorAll('.news_con img');
+    // const wrapper = document.querySelectorAll('.news-card .news_con');
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    // var news_card = document.getElementsByClassName('news-card');
-    // let Img = document.querySelectorAll('.news-img');
-    // let title = document.querySelectorAll('.news_con .card-title');
-    // let text = document.querySelectorAll('.news_con .card-text');
-    // var captionText = document.getElementById("caption");
-    // news_card.onclick = function () {
-    //   document.querySelector('.popup-news').style.display = 'block';
+    // wrapper.forEach(img => {
+    //   img.onclick = () => {
+    //     document.querySelector('.popup-news').style.display = 'block';
+    //     document.querySelector('.popup-news img.news-image-popup').src = news_img.getAttribute('src');
+    //     document.querySelector('.post-title').innerHTML = 'hello' 
+        
+    //   }
+    // });
 
-    //   Img.src = this.src;
 
-    //   captionText.innerHTML = this.alt;
-    // }
-   
-
+    //คลิกได้แค่ตรงที่เป็นรูป เปลี่ยนแค่รูป ยังเปลี่ยนเนื้อหาไม่ได้
     document.querySelectorAll('.news_con img').forEach(news_con => {
       news_con.onclick = () => {
         document.querySelector('.popup-news').style.display = 'block';
         document.querySelector('.popup-news .news-card img.news-image-popup').src = news_con.getAttribute('src');
-        document.querySelector('.news-text').style.display = 'block';
       }
     });
 
