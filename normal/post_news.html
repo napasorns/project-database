@@ -156,10 +156,10 @@
     //         document.querySelector('.news-text').style.display = 'block';
     //       }
     //     });
-    document.querySelectorAll('.news-card .news_con').forEach(news_con => {
+    document.querySelectorAll('.news-card .news_con img.new-image').forEach(news_con => {
       news_con.onclick = () => {
         document.querySelector('.popup-news').style.display = 'block';
-        document.querySelector('.popup-news img.new-image').src = card.getAttribute('src');
+        document.querySelector('.popup-news img.new-image').src = news_con.getAttribute('src');
         document.querySelector('.news-text').style.display = 'block';
       }
     });

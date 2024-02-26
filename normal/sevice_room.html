@@ -140,13 +140,13 @@
 
   <script>
 
-    var picture = document.getElementsByClassName('card-img-top');
-    const room_title = document.getElementsByClassName('card-title');
-    const room_text = document.getElementsByClassName('card-text');
-    document.querySelectorAll('.room_card .card').forEach(card => {
+    // var picture = document.getElementsByClassName('card-img-top');
+    // const room_title = document.getElementsByClassName('card-title');
+    // const room_text = document.getElementsByClassName('card-text');
+    document.querySelectorAll('.room_card img').forEach(card => {
       card.onclick = () => {
         document.querySelector('.popup-image').style.display = 'block';
-        document.querySelector('.popup-image img').src = picture;
+        document.querySelector('.popup-image img').src = card.getAttribute('src');
         // document.querySelector('.popup-image img').src = room_card.getAttribute('src');
         // document.querySelector('.popup-image .room-text') = room_card.getElementsByClassName('.room_card .room-text');
         // const text1 = card.getElementsByClassName('.room_card .card-title');
