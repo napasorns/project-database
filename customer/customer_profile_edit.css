@@ -4,10 +4,12 @@
     justify-content: space-between;
     padding: 20px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 .profile-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 /* .profile-action {
     display: flex;
@@ -24,34 +26,7 @@
 
 .bold-text {
     font-weight: 700;
-}
-
-.profile-section {
-  /* display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
-  /* display: flex;
-  justify-content: space-between;
-  align-items: right; */
-}
-
-.action-btn {
-  /* padding: 10px 20px; */
-  /* text-decoration: none;
-  background-color: #716564; /* สีพื้นหลัง */
-  /* color: white; สีตัวอักษร */
-  /* border-radius: 5px; ทำให้มีมุมโค้ง */
-  /* transition: background-color 0.3s ease; เพื่อทำให้เปลี่ยนสีพื้นหลังอย่างนุ่มนวล */
-  /* margin-top: 50px; */ 
-}
-
-.action-btn:hover {
-  background-color: #564d4c; /* สีพื้นหลังเมื่อชี้ (hover) */
-}
-
-.profile-info{
-  /* align-items: center; */
+    
 }
 
 /* aaaaaaaaaaaaaaaaaaa*/
@@ -60,7 +35,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* ทำให้ main มีความสูงเท่ากับ viewport height */
+  height: 110vh; /* ทำให้ main มีความสูงเท่ากับ viewport height */
 }
 
 .profile-section {
@@ -70,7 +45,6 @@ main {
 
 .profile-info {
   text-align: left;
-  /* padding: 10px; */
   width: 700px; /* ปรับขนาดรูปตามที่ต้องการ */
   height: 700px; /* ปรับขนาดรูปตามที่ต้องการ */
   
@@ -79,7 +53,7 @@ main {
 }
 
 
-.profile-img { /* ปรับขนาดความกว้างตามที่ต้องการ */
+.profile-img {
   height: auto; /* รักษาสัดส่วนของรูป */
   border-radius: 50%; /* ทำให้มีรูปร่างวงกลม */
   
@@ -131,6 +105,7 @@ a .submit-btn {
   /* สามารถใส่ค่าสีแบบ RGB, Hex, หรือชื่อสีได้ตามต้องการ */
   background-color: #716564;
   border: none;
+  padding: .5rem 1.5rem;
 }
 
 a.cancle-btn{
@@ -160,14 +135,6 @@ a.cancle-btn{
   margin-top: 15px;
 }
 
-.profile-section {
-   /* เพื่อป้องกันเนื้อหาภายในไม่ให้ซ้อนทับกับพื้นหลัง */
-}
-
-.profile-section::before {
-  
-}
-
 body {
   background: linear-gradient(to bottom, #EDE7E6 50%, #ffffff 50%);
   /* background-size: 2px 100%; ขนาดของเส้นขั้น (2px ความกว้าง x 100% ความสูง) */
@@ -177,5 +144,14 @@ body {
 }
 
 
+/* ปรับขนาดสำหรับแสดงในแท็ปเล็ต */
+@media screen and (max-width: 992px) {
+  main {
+    height: 90vh; 
+  }
 
-
+  .profile-info {
+    width: 100%;
+    height: 50vh;
+}
+}
