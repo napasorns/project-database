@@ -73,19 +73,6 @@ main {
   padding: 20px;
 }
 
-/* .action-btn {
-  margin: 5px;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #007bff;
-  border-radius: 5px;
-}
-
-.action-btn:hover {
-  background-color: #0056b3;
-} */
-
 .profile-action {
   display: flex;
   gap: 10px; /* ปรับระยะห่างตามความต้องการ */
