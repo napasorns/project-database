@@ -21,12 +21,7 @@
     margin-left: 10px;
     cursor: pointer;
 } */
-.profile-img {
-    width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-    
-}
+
 .bold-text {
     font-weight: 700;
 }
@@ -36,9 +31,9 @@
   justify-content: space-between;
   padding: 20px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: right;
+  align-items: right; */
 }
 
 .action-btn {
@@ -72,13 +67,14 @@ main {
   /* display: flex;
   align-items: center; */
   border: 2px solid #716564; /* เพิ่มเส้นขอบ */
+  background-color: #fff;
 }
 
 .profile-info {
   text-align: left;
   /* padding: 10px; */
   width: 700px; /* ปรับขนาดรูปตามที่ต้องการ */
-  height: 600px; /* ปรับขนาดรูปตามที่ต้องการ */
+  height: 700px; /* ปรับขนาดรูปตามที่ต้องการ */
   
   /* border-radius: 10px; ทำให้มีขอบมนเล็กน้อย */
   line-height: 3; /* เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
@@ -90,13 +86,15 @@ main {
 /* } */
 
 
-.profile-img {
-  width: 150px; /* ปรับขนาดความกว้างตามที่ต้องการ */
+.profile-img { /* ปรับขนาดความกว้างตามที่ต้องการ */
   height: auto; /* รักษาสัดส่วนของรูป */
   border-radius: 50%; /* ทำให้มีรูปร่างวงกลม */
-  margin-right: 0px; /* ระยะห่างระหว่างรูปและข้อความ */
-  margin-left: 250px;
-  margin-top: 15px;
+  
+  /* ทำให้ รูปอยู่ตรงกลาง */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 .bold-text {
@@ -170,19 +168,11 @@ a.cancle-btn{
 }
 
 .profile-section {
-  position: relative;
-  overflow: hidden; /* เพื่อป้องกันเนื้อหาภายในไม่ให้ซ้อนทับกับพื้นหลัง */
+   /* เพื่อป้องกันเนื้อหาภายในไม่ให้ซ้อนทับกับพื้นหลัง */
 }
 
 .profile-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
-  z-index: -1;
+  
 }
 
 body {
