@@ -76,7 +76,7 @@
   }
 
   .promo-card:hover .promo-img {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .promo-card:hover .promo-overlay {

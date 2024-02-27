@@ -18,6 +18,8 @@
 .news-card:hover{
   opacity: 0.8;
   cursor: pointer;
+  transition: .2s linear;
+  transform: scale(1.01);
 }
 
 /* pop up */
@@ -26,7 +28,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
     z-index: 100;

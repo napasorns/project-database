@@ -25,6 +25,8 @@
 .room_card:hover {
   opacity: 0.8;
   cursor: pointer;
+  transition: .2s linear;
+  transform: scale(1.02);
 }
 
 /* pop up */
