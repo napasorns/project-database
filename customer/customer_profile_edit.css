@@ -9,10 +9,10 @@
     display: flex;
     flex-direction: column;
 }
-.profile-action {
+/* .profile-action {
     display: flex;
     align-items: center;
-}
+} */
 /* .action-btn {
     background-color: #716564;
     color: #fff;
@@ -64,8 +64,6 @@ main {
 }
 
 .profile-section {
-  /* display: flex;
-  align-items: center; */
   border: 2px solid #716564; /* เพิ่มเส้นขอบ */
   background-color: #fff;
 }
@@ -79,11 +77,6 @@ main {
   /* border-radius: 10px; ทำให้มีขอบมนเล็กน้อย */
   line-height: 3; /* เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
 }
-
-/* .profile-action {
-  
-  line-height: 3; เพิ่ม line-height สำหรับเพิ่มระยะห่างระหว่างบรรทัด */
-/* } */
 
 
 .profile-img { /* ปรับขนาดความกว้างตามที่ต้องการ */
