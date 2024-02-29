@@ -3,6 +3,10 @@
     margin: 0 auto;
 } */
 
+.d-none{
+    display: none;
+}
+
 .title {
     font: 700 60px 'Inria Serif', sans-serif; 
     color: #000;
