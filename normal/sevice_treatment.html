@@ -348,7 +348,7 @@
         divtag.classList.add('d-none');
       }
 
-      // dropdown ค่าเริ่มต้นคือ treatment-menu_1 จะแสดงรายการนวดผ่อนคลายอันแรก
+      // dropdown ค่าเริ่มต้นคือ รายการทั้งหมด แสดงรายการทั้งหมด
       if (Item.value === 'all'){
         div.forEach(showAll);
         function showAll(divtag){
@@ -356,7 +356,7 @@
         }
       };
 
-      // กรณีที่เลือก dropdown รายการอื่น จะเปลี่ยนเป็นรายการอื่นที่ id ตรงกัน
+      // กรณีที่เลือก dropdown รายการอื่น จะเปลี่ยนเป็นรายการอื่นที่ value กับ id ตรงกัน
       if (Item.value !== 'all'){
         document.getElementById(Item.value).classList.remove('d-none');
       };
