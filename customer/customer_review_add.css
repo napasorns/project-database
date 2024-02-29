@@ -89,3 +89,45 @@ a .submit-btn {
         gap: 2rem;
     }
   }
+
+  /* ดาว */
+
+.star-rating{
+    margin-left: 20px;
+}
+
+.star-rating img {
+    width: 30px; /* กำหนดความกว้างของดาว */
+    margin-top: 10px;
+  }
+
+  /* เพิ่มดาว */
+
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse; /* สลับทิศทางของ flex direction */
+  }
+
+  .star-rating input {
+    display: none;
+  }
+
+  .star-rating label {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.3s;
+  }
+
+  .star-rating label:before {
+    content: '\2605';
+    font-size: 24px;
+    color: #ddd;
+    display: block;
+  }
+
+  .star-rating input:checked ~ label,
+  .star-rating input:checked ~ label:before {
+    color: #ffcc00;
+  }
