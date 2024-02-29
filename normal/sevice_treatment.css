@@ -95,4 +95,14 @@
     .treatment-item {
         margin: .3rem;
     }
+
+    .treatment-item{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .treatment-img img{
+        transform: translateX(-0.4rem);
+        margin-bottom: 1rem;
+    }
   }
