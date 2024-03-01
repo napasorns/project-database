@@ -60,6 +60,16 @@ main {
     font-size: 18px;
 }
 
+.forgetPass{
+    display: block;
+    text-align: end;
+    color: #716564;
+}
+
+.forgetPass:hover{
+    color: #000;
+}
+
 .register-link a{
     color: #716564;
 }
